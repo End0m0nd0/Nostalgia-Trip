@@ -25,7 +25,7 @@ The project features unique visuals, utilizing custom shaders written in **Shade
 
 ## 🛠️ Technologies & Tools
 
-* **Game Engine:** Unity
+* **Game Engine:** Unity 2022.3.46f1 (LTS)
 * **Programming:** C#
 * **Graphics & Rendering:** Custom Shaders (ShaderLab, HLSL)
 * **UI System:** UI Elements
@@ -37,11 +37,41 @@ This project was brought to life by an amazing 5-person team who joined forces f
 * **[Dawid Juszyński (VeeturN)](https://github.com/VeeturN)** - Developer
 * **[Julia (juliapazdziorek)](https://github.com/juliapazdziorek)** - Developer
 * **[Kinga Kowalska (JackKaKi)](https://github.com/JackKaKi)** - Developer
-* **Jędrzej Nowakowski** - Developer
+* **[Jędrzej Nowakowski (End0m0nd0)](https://github.com/End0m0nd0)** - Developer
 * **Zuzanna G** - 2D/3D Art & Visuals 🎨
 
-## 🚀 How to Play / Run the Project
+## 🚀 How to Run the Project
 
+### Requirements
+* [Git](https://git-scm.com/downloads)
+* [Unity Hub](https://unity.com/download)
+* **Unity 2022.3.46f1 (LTS)** – the editor version this project was made with. Other 2022.3.x LTS versions should also work.
+
+### Steps
 1. Clone the repository to your local machine:
    ```bash
-   git clone [https://github.com/VeeturN/Nostalgia-Trip-Game-Jam-2025.git](https://github.com/VeeturN/Nostalgia-Trip-Game-Jam-2025.git)
+   git clone https://github.com/End0m0nd0/Nostalgia-Trip.git
+   ```
+2. Open **Unity Hub**, go to **Projects → Add → Add project from disk** and select the cloned `Nostalgia-Trip` folder.
+3. If Unity 2022.3.46f1 is not installed, Unity Hub will offer to install it – accept, or pick another 2022.3.x version you already have.
+4. Open the project. The first launch can take a few minutes while Unity imports assets and generates the `Library` folder.
+5. In the **Project** window open the scene `Assets/Scenes/UIScene.unity` – it is the entry point that loads the main menu.
+6. Press **▶ Play** in the editor and start the game from the menu.
+
+### Building a standalone version
+1. Go to **File → Build Settings…**
+2. Make sure `UIScene` is the first scene in the *Scenes In Build* list.
+3. Pick your target platform (e.g. *Windows, Mac, Linux*) and click **Build**.
+
+## 🎮 Controls
+
+The game is played by two players on one keyboard.
+
+| Action | Player 1 | Player 2 |
+| --- | --- | --- |
+| Move | `W` `A` `S` `D` | `↑` `←` `↓` `→` |
+| Jump | `Space` | `U` |
+| Transform (hedgehog / gorilla) | `R` | `I` |
+| Grapple / rope (levels 2–3) | `Left Mouse Button` | `P` |
+| Dash (levels 2–3) | `Left Shift` | `O` |
+| Pause menu | `Esc` | `Esc` |
